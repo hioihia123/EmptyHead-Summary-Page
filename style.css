@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+section .book {
+  position: relative;
+  width: 383px;
+  height: 567px;
+    transform-style: preserve-3d;
+  transition: 0.5s;
+  box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
+}
+
+section .book:hover {
+  transform: rotateY(35deg);
+}
+
+section .book:active {
+  transform: rotateY(180deg);
+}
+
+section .book:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  transform-origin: left;
+  background: url("https://raw.githubusercontent.com/hioihia123/hioihia123.github.io/main/Black%20and%20White%20Romantic%20Novel%20Book%20Cover.png");
+  background-position: center;
+  transform: rotateY(90deg);
+}
+
+section .book:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  background: url("https://raw.githubusercontent.com/hioihia123/hioihia123.github.io/main/Black%20and%20White%20Romantic%20Novel%20Book%20Cover.png");
+  background-position: center;
+  transform: rotateY(180deg) translateZ(60px);
+}
+
+section .book img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h1 {
+  position: relative;
+  bottom: 2.4in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 2.6in;
+  width: 100%
+}
+h2 {
+  position: relative;
+  bottom: 2.2in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 2.9in;
+  width: 100%
+}
+h3 {
+  position: relative;
+  bottom: 2.0in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 2.9in;
+  width: 80%
+}
+h4 {
+  position: relative;
+  bottom: 1.7in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 2.9in;
+  width: 80%
+}
+:root {
+  --text: #0e0e0e;
+  --line: #BBC1E1;
+  --line-active: #b90b05;
+}
+
+h5 {
+  position: relative;
+  bottom: 1.7in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 2.9in;
+  width: 80%;
+}
+h6 {
+  position: relative;
+  bottom: 0.5in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 2.9in;
+  width: 80%;
+}
+h7 {
+  position: relative;
+  bottom: 0.4in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 2vh;
+  left: 2.9in;
+  width: 10%;
+}
+h8 {
+  position: relative;
+  top: 1in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 1.5in;
+  width: 80%;
+}
+h5 {
+  position: relative;
+  bottom: 1.1in;
+  font-family:'Yanone Kaffeesatz', sans-serif;;
+  font-size: 3vh;
+  left: 2.9in;
+  width: 80%;
+}
+a{
+  text-decoration: none;
+}
+a:visited {color:#ff0000;}
+a:hover {font-size:120%;}
+
